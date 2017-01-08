@@ -10,8 +10,8 @@
     this.xhr.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         this.myText = JSON.parse(this.responseText);
-        console.log(this.myText);
         updateViewList();
+        var link = document.getElementById("links").style.display = "block";
       }
     };
     this.xhr.send();
@@ -25,15 +25,21 @@
   }
 
   NewsController.prototype.showArticle = function(){
-    var article = document.getElementById("article");
-    article.style.display = "block";
     this.findArticle();
+    var article = document.getElementById("article");
+    var headline = document.getElementById("headline");
+    headline.style.display = "block";
+    article.style.display = "block";
+
   };
 
   NewsController.prototype.findArticle = function(){
     var newsArticleId = window.location.hash.split("/")[1];
-    var element = document.getElementById("article");
-    element.innerHTML = this.xhr.myText.response.results[newsArticleId].fields.body;
+    var article = document.getElementById("article");
+    var headline = document.getElementById("headline");
+    console.log(this.xhr.myText.response.results[newsArticleId].webTitle)
+    article.innerHTML = this.xhr.myText.response.results[newsArticleId].fields.body;
+    headline.innerHTML = this.xhr.myText.response.results[newsArticleId].webTitle;
   };
 
   exports.NewsController = NewsController;

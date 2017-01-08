@@ -1,4 +1,6 @@
-
+body {
+  font-family: Arial, Verdana;
+}
 #wrapper {
   width: 80%;
   margin: auto;
@@ -10,29 +12,45 @@ h1 {
   margin-bottom: 30px;
 }
 
+#headline {
+  display: none;
+  text-align: center;
+}
+
 #links {
+  display: none;
   padding: 0;
   list-style-type: none;
   list-style-position: inside;
-  border: solid 1px;
-  padding: 10px 10px 0px 10px;
+  margin-bottom: 30px;
 }
 
 #links li {
-  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #ff5900;
+  margin-bottom: 5px;
 }
 
 #links a {
+  color: white;
+  padding: 8px 20px;
+  display:block;
   text-decoration: none;
 }
 
 #links a:hover {
+  border-radius: 8px;
   text-decoration: none;
-  color: red;
+  color: #ffbd99;
 }
 
 #article {
   display: none;
-  border: solid 1px;
+  border-top: solid 1px;
   padding: 10px 10px 10px 10px;
+}
+
+img {
+  max-width: 50%;
+  max-height: 50%;
 }
