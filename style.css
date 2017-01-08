@@ -59,3 +59,17 @@ img {
   max-width: 50%;
   max-height: 50%;
 }
+
+.summary {
+
+}
+
+.info {
+  border: solid 1px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  display: none;
+  padding: 20px;
+  max-width: 40%;
+}
