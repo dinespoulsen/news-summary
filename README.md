@@ -1,5 +1,5 @@
 
-Chitter application
+News Summary Application
 ==================
 
 Introduction
