@@ -11,7 +11,6 @@
       if (this.readyState == 4 && this.status == 200) {
         this.myText = JSON.parse(this.responseText);
         updateViewList();
-        console.log(this.myText);
         var link = document.getElementById("links").style.display = "block";
       }
     };
