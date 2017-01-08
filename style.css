@@ -1,0 +1,38 @@
+
+#wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#links {
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+  border: solid 1px;
+  padding: 10px 10px 0px 10px;
+}
+
+#links li {
+  margin-bottom: 10px;
+}
+
+#links a {
+  text-decoration: none;
+}
+
+#links a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+#article {
+  display: none;
+  border: solid 1px;
+  padding: 10px 10px 10px 10px;
+}

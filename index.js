@@ -1,2 +1,3 @@
 var newsController = new NewsController();
-newsController.requestNews("javascript", newsController.updateViewList.bind(newsController));
+window.addEventListener("hashchange", newsController.showArticle.bind(newsController));
+newsController.requestNews("business", newsController.updateViewList.bind(newsController));

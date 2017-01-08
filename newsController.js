@@ -18,15 +18,23 @@
   };
 
   NewsController.prototype.updateViewList = function(){
-    console.log("test")
     var link = document.getElementById("links");
-    console.log(this);
-    console.log(this.xhr.myText.response.results.length);
     for (i = 0; i < this.xhr.myText.response.results.length; i += 1){
-      console.log(this.xhr.myText.response.results[i].webTitle)
-      link.innerHTML += "<li><a href=\"#\">" + this.xhr.myText.response.results[i].webTitle + "</li></a>";
+      link.innerHTML += "<li><a id=\"link\" href=\"#articles/" + i + "\">" + parseInt(i + 1)+ ": " + this.xhr.myText.response.results[i].webTitle + "</li></a>";
     };
   }
+
+  NewsController.prototype.showArticle = function(){
+    var article = document.getElementById("article");
+    article.style.display = "block";
+    this.findArticle();
+  };
+
+  NewsController.prototype.findArticle = function(){
+    var newsArticleId = window.location.hash.split("/")[1];
+    var element = document.getElementById("article");
+    element.innerHTML = this.xhr.myText.response.results[newsArticleId].fields.body;
+  };
 
   exports.NewsController = NewsController;
 
