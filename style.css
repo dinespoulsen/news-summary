@@ -2,7 +2,7 @@ body {
   font-family: Arial, Verdana;
 }
 #wrapper {
-  width: 80%;
+  max-width: 60%;
   margin: auto;
 }
 
@@ -13,6 +13,11 @@ h1 {
 }
 
 #headline {
+  display: none;
+  text-align: center;
+}
+
+#publication-date {
   display: none;
   text-align: center;
 }

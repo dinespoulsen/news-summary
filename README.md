@@ -4,7 +4,7 @@ News Summary Application
 
 Introduction
 -------
-
+The News Summary app searches for "business" within all the articles from the Guardian newspaper API and displays them on a page. Clicking on a headline will shows the full article. The app is designed as a single page web app using frontend JavaScript, CSS and HTML. The app sends a get request to the Guardian API using an XTMLHttp object and the response is translated into a JSON object. The app uses javascript callbacks to handle the execution process of the DOM and to increase the user experience when the layout is rendered to the page.
 -------
 
 ```
@@ -50,7 +50,10 @@ To run the program start a local server by writing ruby app/app.rb in the termin
 
 Technologies used
 -----
-*
+* Frotend javascript
+* Html
+* CSS
+* Guardian API
 
 Areas to improve
 -----
