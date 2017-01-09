@@ -10,6 +10,8 @@
     this.xhr.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         this.myText = JSON.parse(this.responseText);
+        console.log(this);
+        console.log(this.myText);
         updateViewList();
         var link = document.getElementById("links").style.display = "block";
       }
