@@ -4,9 +4,7 @@ News Summary Application
 
 Introduction
 -------
-
 The News Summary app searches for "business" within all the articles from the Guardian newspaper API and displays them on a page. When hovering above an article a short summary is displayed and Clicking on a headline will show the full article. The app is designed as a single page web app using JavaScript, CSS and HTML. The app sends a request to the Guardian API using an XTMLHttp object and the response is translated into a JSON object. The app uses javascript callbacks to handle the execution process of the DOM to increase the user experience when the layout is rendered to the page.
--------
 
 ```
 As a busy politician
