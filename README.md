@@ -4,7 +4,7 @@ News Summary Application
 
 Introduction
 -------
-The News Summary app searches for "business" within all the articles from the Guardian newspaper API and displays them on a page. Clicking on a headline will shows the full article. The app is designed as a single page web app using frontend JavaScript, CSS and HTML. The app sends a get request to the Guardian API using an XTMLHttp object and the response is translated into a JSON object. The app uses javascript callbacks to handle the execution process of the DOM and to increase the user experience when the layout is rendered to the page.
+The News Summary app searches for "business" within all the articles from the Guardian newspaper API and displays them on a page. When hovering above an article a short summary is displayed and Clicking on a headline will show the full article. The app is designed as a single page web app using JavaScript, CSS and HTML. The app sends a request to the Guardian API using an XTMLHttp object and the response is translated into a JSON object. The app uses javascript callbacks to handle the execution process of the DOM to increase the user experience when the layout is rendered to the page.
 -------
 
 ```
@@ -40,25 +40,28 @@ To make my news reading more fun
 
 Installation
 -----
-* Run the command 'bundle install' in the project directory to ensure you have all the gems.
+* Clone the repository to your local machine.
 
 
 How to use the applicaton
 -----
 
-To run the program start a local server by writing ruby app/app.rb in the terminal and the app.rb file from the project directory will be executed.
+Open the index.html file in your favorite browser.An XTML request with a search query for "business" will be sent to the Guardian API and the top ten articles will be displayed once received from the Guardian API.
 
 Technologies used
 -----
-* Frotend javascript
+* Javascript
+* XTML requests
 * Html
 * CSS
 * Guardian API
 
 Areas to improve
 -----
-
-*
+* Customize search query to the Guardian API
+* User interface
 
 Example
 -----
+
+![alt tag](./index.png)
